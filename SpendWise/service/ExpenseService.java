@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class ExpenseService {
     private ArrayList<Expense> expenses;
-
     public ExpenseService(){
         expenses = new ArrayList<>();
     }
