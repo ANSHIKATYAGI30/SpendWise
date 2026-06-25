@@ -1,9 +1,7 @@
 package view;
 
 import javax.swing.*;
-
 import model.Expense;
-
 import java.awt.*;
 
 public class AddExpenseDialog extends JDialog {
@@ -15,38 +13,17 @@ public class AddExpenseDialog extends JDialog {
     private boolean saved = false;
 
     public AddExpenseDialog(JFrame parent){
-
         super(parent,
               "Add Expense",
               true);
-
         setSize(400,300);
-
         setLocationRelativeTo(parent);
-
         initializeUI();
     }
 
     private void initializeUI(){
-
-        JPanel panel =
-                new JPanel(
-                        new GridLayout(
-                                5,
-                                2,
-                                10,
-                                10
-                        )
-                );
-
-        panel.setBorder(
-                BorderFactory.createEmptyBorder(
-                        15,
-                        15,
-                        15,
-                        15
-                )
-        );
+        JPanel panel = new JPanel(new GridLayout(5,2,10,10));
+        panel.setBorder(BorderFactory.createEmptyBorder(15,15,15,15));
 
         panel.add(new JLabel("Date(yyyy-mm-dd)"));
         dateField = new JTextField();
@@ -66,7 +43,6 @@ public class AddExpenseDialog extends JDialog {
         panel.add(descriptionField);
 
         JButton saveButton = new JButton("Save");
-
         saveButton.addActionListener(e -> {saved = true; dispose();});
 
         panel.add(new JLabel(""));
