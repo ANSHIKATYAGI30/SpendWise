@@ -21,7 +21,6 @@ public class FileManager {
             }
             System.out.println("Expenses saved successfully!");
         }
-
         catch(IOException e){
             System.out.println("Error saving expenses....!!!!!");
         }
@@ -29,13 +28,10 @@ public class FileManager {
 
     public static ArrayList<Expense> loadExpenses(){
         ArrayList<Expense> expenses = new ArrayList<>();
-
         File file = new File(FILE_NAME);
-
         if(!file.exists()){
             return expenses;
         }
-
         try(BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))){
             String line;
 
@@ -51,12 +47,10 @@ public class FileManager {
                 ));
             }
         }
-
         catch(IOException e){
             System.out.println("Error loading expenses...!!!!");
         }
         return expenses;
-
     }
 
     public static double loadBudget(){
