@@ -1,7 +1,6 @@
 package model;
 
 public class Expense {
-
     private int id;
     private String date;
     private String category;
