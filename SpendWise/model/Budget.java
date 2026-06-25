@@ -1,7 +1,6 @@
 package model;
 
 public class Budget {
-
     private double monthlyBudget;
 
     public Budget(double monthlyBudget){
