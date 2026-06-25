@@ -17,15 +17,12 @@ public class AnalyticsService {
     //highest expense
     public double calculateHighest(ArrayList<Expense> expenses){
         if(expenses.isEmpty()){return 0;}
-        
         double highest = expenses.get(0).getAmount();
-        
         for(Expense e : expenses){
             if(e.getAmount() > highest){
                 highest = e.getAmount();
             }
         }
-        
         return highest;
     }
 
