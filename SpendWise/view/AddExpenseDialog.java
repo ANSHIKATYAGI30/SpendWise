@@ -1,5 +1,4 @@
 package view;
-
 import javax.swing.*;
 import model.Expense;
 import java.awt.*;
