@@ -7,7 +7,6 @@ public class ExpenseService {
     public ExpenseService(){
         expenses = new ArrayList<>();
     }
-
     //auto-id generator
     public int generateNextId(){
         int maxId = 0;
