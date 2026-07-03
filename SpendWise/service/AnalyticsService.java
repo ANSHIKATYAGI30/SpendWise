@@ -3,7 +3,6 @@ import model.Expense;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
 public class AnalyticsService {
     //total expense
     public double calculateTotal(ArrayList<Expense> expenses){
